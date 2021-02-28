@@ -1,38 +1,206 @@
-.App {
+body {
+  font-family: 'Akaya Telivigala', cursive;
+  margin: 0;
+}
+
+.header {
+  padding: 4px;
   text-align: center;
+  background: #0b9fde;
+  color: yellow;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.pos-btn{
+  outline: 0;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  border-width: 3px;
+  color: yellow;
+  background-color: black;
+  width: 60px;
+  height: 50px;
+  float: left;
+  margin: 5px;
+  font-size: 30px;
+  border-color: silver;
+  font-weight: bold;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  background-color: #f7c648; /* Green */
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  
+  text-align: center;
+  text-decoration: none;
+  border-width: 3px;
+  border-color: silver;
+  font-size: 25px;
+  float: left;
+  margin: 5px;
+  margin-top: 10px;
+  height: 50px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.square {
+  
+  background-color: #9dd2ea;
+  width: 440px;
+  height: 260px;
+  text-align: center;
+  float: left;
+  padding: 20px;
+  
+}
+
+
+.SelectedSquare{
+  background-color: orange;
+  float: right;
+  width: 300px;
+  height: 530px;
+  font-size: 20px;
+  font-weight: bold;
+  border: #0b9fde solid 5px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.PriceSquare {
+  width: 440px;
+  height: 530px;
+  text-align: center;
+  float: left;
+  padding: 20px;
+}
+
+.roundbutton {
+  background: #108fe8;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #0d72b8 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: inline-block;
+  height: 6vw;
+  width: 6vw;
+  font-weight: bold;
   color: white;
+  font-size: 20px;
+  margin: 5px;
+  outline: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.roundbutton:active {
+  background-color: #108fe8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-header{
+
+  text-align: center;
+  background: orange;
+  color: black;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+  padding-left: 10px;;
+  font-weight:bold;
+
+}
+
+.modal-container{
+  background-color: #1e96eb;
+  padding: 10px;
+  
+  margin: auto;
+}
+
+.table-container {
+  width: 300px;
+    float: left;
+    height: 200px;
+}
+.modal-heading{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.modal-table{
+  padding-top: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table-input{
+  width: 60%;
+  background-color: #0d68a8 ;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+  border: none;
+}
+
+.modal-btn{
+  display: inline;
+  color: black;
+  background-color: yellow;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 18px;
+  border: solid 1px transparent;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.modal-keyboard{
+  width: 120px;
+  float: right;
+  
+}
+.clear{
+  clear: both;
+}
+
+.modal-kb-btn{
+  background-color: white; 
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  float: left;
+  height: 45px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 35px;
+  border-radius: 5px;
 }
